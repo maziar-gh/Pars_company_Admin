@@ -243,7 +243,7 @@ public class FragmentSendFile extends Fragment {
 
             bitmap = BitmapFactory.decodeFile(picturePath);
 
-            is_image = !is_image;
+            is_image = true;
             viewImage.setImageBitmap(bitmap);
         }
 
@@ -257,7 +257,7 @@ public class FragmentSendFile extends Fragment {
             // Solve image inverting problem
             angleToRotate = angleToRotate + 180;
             bitmap = rotate(bitmap, angleToRotate);
-            is_image = !is_image;
+            is_image = true;
             viewImage.setImageBitmap(bitmap);
         }
 

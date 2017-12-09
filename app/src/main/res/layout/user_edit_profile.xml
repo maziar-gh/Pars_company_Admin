@@ -62,7 +62,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_name"
+                            android:id="@+id/txt_name_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/reg_name"
@@ -75,7 +75,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_namayande"
+                            android:id="@+id/txt_namayande_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/reg_namayande"
@@ -88,7 +88,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_tel"
+                            android:id="@+id/txt_tel_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/tel"
@@ -101,7 +101,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_telphon"
+                            android:id="@+id/txt_telphon_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/telphon"
@@ -114,7 +114,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_password"
+                            android:id="@+id/txt_password_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/password"
@@ -127,25 +127,13 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_comfirm_password"
+                            android:id="@+id/txt_comfirm_password_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/reg_confirmPass"
                             android:inputType="textPassword" />
                     </android.support.design.widget.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:theme="@style/MyEditText">
-
-                        <EditText
-                            android:id="@+id/txt_email"
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/reg_email"
-                            android:inputType="text" />
-                    </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
@@ -153,7 +141,7 @@
                         android:theme="@style/MyEditText">
 
                         <EditText
-                            android:id="@+id/txt_address"
+                            android:id="@+id/txt_address_edit"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/address"
@@ -164,26 +152,15 @@
 
 
 
-                    <TextView
-                        android:id="@+id/tv_register_login"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:onClick="registerOnClicks"
-                        android:paddingTop="5dp"
-                        android:text="@string/already_registered"
-                        android:textColor="#000" />
-
-
 
                     <Button
-                        android:id="@+id/btn_register_main"
+                        android:id="@+id/btn_register_edit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="22dp"
                         android:background="@color/material_blue_800"
                         android:onClick="registerOnClicks"
-                        android:text="@string/btn_editprofile_main"
+                        android:text="ویرایش"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="18sp" />
