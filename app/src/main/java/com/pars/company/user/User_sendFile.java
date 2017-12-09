@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -104,7 +103,7 @@ public class User_sendFile extends AppCompatActivity {
                                 item.setRe_5(object.getString("re_5"));
                                 item.setRe_6(object.getString("re_6"));
 
-                                Log.d("TAG---------OK", item.getIs_admin());
+                                //Log.d("TAG---------OK", item.getIs_admin());
 
                                 if (save.load(AppController.SAVE_USER_IS_ADMIN, "0").equals("0")) {
                                     if (item.getIs_admin().equals("0")) {
