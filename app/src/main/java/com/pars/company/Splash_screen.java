@@ -35,6 +35,7 @@ public class Splash_screen extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         save = new SavePref(this);
         save.save(AppController.SAVE_USER_ID_FOR_SENDFILE, "0");
+        save.save(AppController.SAVE_USER_IS_ADMIN, "0");
         StartAnimations();
 
     }
