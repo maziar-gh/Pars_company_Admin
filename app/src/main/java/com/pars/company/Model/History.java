@@ -6,6 +6,7 @@ package com.pars.company.Model;
 
 public class History {
     private String id;
+    private String id_user;
     private String id_group;
     private String namayandeh;
     private String date;
@@ -53,6 +54,14 @@ public class History {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getId_user() {
+        return id_user;
+    }
+
+    public void setId_user(String id_user) {
+        this.id_user = id_user;
     }
 
     public String getId_group() {

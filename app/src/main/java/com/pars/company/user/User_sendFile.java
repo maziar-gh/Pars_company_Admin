@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -24,7 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User_sendFile extends AppCompatActivity {
-
 
     private SavePref save;
     private List<History> itemList_user = new ArrayList<>();
@@ -65,6 +65,7 @@ public class User_sendFile extends AppCompatActivity {
 
                                 History item = new History();
                                 item.setId(object.getString("id"));
+                                item.setId_user(object.getString("id_user"));
                                 item.setNamayandeh(object.getString("fullname"));
                                 item.setId_group(object.getString("id_group"));
                                 item.setDate(object.getString("tarikh"));
@@ -103,10 +104,12 @@ public class User_sendFile extends AppCompatActivity {
                                 item.setRe_5(object.getString("re_5"));
                                 item.setRe_6(object.getString("re_6"));
 
-                                //Log.d("TAG---------OK", item.getIs_admin());
 
-                                if (save.load(AppController.SAVE_USER_IS_ADMIN, "0").equals("0")) {
-                                    if (item.getIs_admin().equals("0")) {
+
+                                if (save.load(AppController.SAVE_USER_ID, "0").equals(item.getId_user())) {
+                                    if (item.getIs_admin().equals("1")) {
+                                        Log.d("TAG---------", "item.getId_user():  "+item.getId_user());
+                                        Log.d("TAG---------", "item.getIs_admin():  "+item.getIs_admin());
                                         itemList_user.add(item);
                                     }
                                 }
