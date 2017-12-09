@@ -6,6 +6,8 @@ package com.pars.company;
 
 public class Shamsi {
 
+    private int a=0;
+
     private int day, month, year;
 
     private int jY, jM, jD;
