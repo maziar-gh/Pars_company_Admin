@@ -104,8 +104,8 @@ public class User_mainActivity extends AppCompatActivity {
 
 
 
-        user_tv_setting = (TextView) findViewById(R.id.user_tv_setting);
-        user_img_setting = (ImageView) findViewById(R.id.user_img_setting);
+        //user_tv_setting = (TextView) findViewById(R.id.user_tv_setting);
+        //user_img_setting = (ImageView) findViewById(R.id.user_img_setting);
 
         user_img_sendFile = (ImageView) findViewById(R.id.user_img_sendFile);
         user_tv_sendFile = (TextView) findViewById(R.id.user_tv_sendFile);
@@ -176,7 +176,7 @@ public class User_mainActivity extends AppCompatActivity {
 
     //Bottom Navigation
 
-    public void UseronCLickSetting(View v) {
+   /* public void UseronCLickSetting(View v) {
         setVisibiltyBottomBar(user_tv_setting);
         Animation animation = new TranslateAnimation(0, 0, 15, 0);
         Animation animation1 = new TranslateAnimation(0, 0, 70, 0);
@@ -188,7 +188,7 @@ public class User_mainActivity extends AppCompatActivity {
         user_pager.setCurrentItem(1);
 
 
-    }
+    }*/
 
     public void UseronCLickSendFile(View v) {
         setVisibiltyBottomBar(user_tv_sendFile);
@@ -220,7 +220,7 @@ public class User_mainActivity extends AppCompatActivity {
 
     //method set visible bottom bar
     public void setVisibiltyBottomBar(TextView tv) {
-        user_tv_setting.setVisibility(View.GONE);
+//        user_tv_setting.setVisibility(View.GONE);
         user_tv_sendFile.setVisibility(View.GONE);
         user_tv_user.setVisibility(View.GONE);
         //tv_home.setVisibility(View.GONE);
