@@ -33,6 +33,7 @@ public class AppController  extends Application {
     public final static String URL_LOGIN = URL + "auth/login";
     public final static String URL_SIGNUP = URL + "auth/signup";
     public final static String URL_FORGETPASS = URL + "auth/forgotpass";
+    public final static String URL_EDIT_USER_DATA = URL + "config/edituser";
 
     public final static String URL_ALL_USERS= URL + "data/users";
     public final static String URL_ALL_DATA= URL + "data/load";

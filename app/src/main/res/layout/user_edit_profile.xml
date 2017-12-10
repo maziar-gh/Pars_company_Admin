@@ -149,10 +149,6 @@
                     </android.support.design.widget.TextInputLayout>
 
 
-
-
-
-
                     <Button
                         android:id="@+id/btn_register_edit"
                         android:layout_width="match_parent"

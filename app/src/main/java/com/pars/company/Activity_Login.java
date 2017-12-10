@@ -59,7 +59,7 @@ public class Activity_Login extends AppCompatActivity {
         btn_login_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.setMessage("login...");
+                dialog.setMessage("درحال احراز هویت...");
                 dialog.show();
 
                 Login(edt_email.getText().toString(), edt_pass.getText().toString());

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -33,6 +32,7 @@ public class Activity_Register extends AppCompatActivity {
     EditText edt_name, edt_namayanhe, edt_mobile, edt_tel,
             edt_pass, edt_conf_pass, edt_email, edt_address;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +50,7 @@ public class Activity_Register extends AppCompatActivity {
         edt_conf_pass = (EditText) findViewById(R.id.txt_comfirm_password);
         edt_email = (EditText) findViewById(R.id.txt_email);
         edt_address = (EditText) findViewById(R.id.txt_address);
+
     }
 
 
@@ -62,7 +63,7 @@ public class Activity_Register extends AppCompatActivity {
             case R.id.btn_register_main: {
 
 
-                dialog.setMessage("register please wait...");
+                dialog.setMessage("درحال ثبت نام...");
                 dialog.show();
 
                 register(edt_name.getText().toString(),
@@ -98,7 +99,7 @@ public class Activity_Register extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 JSONObject resp = response;
-                Log.d("TAG--------OK", resp.toString());
+                //Log.d("TAG--------OK", resp.toString());
 
                 try {
                     if (resp.getString("status").equals("200")) {
@@ -122,7 +123,7 @@ public class Activity_Register extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Log.d("TAG--------Error", "Error: " + error.getMessage());
+                //Log.d("TAG--------Error", "Error: " + error.getMessage());
 
                 Toast.makeText(Activity_Register.this, "لطفا در زمان دیگری اقدام کنید", Toast.LENGTH_SHORT).show();
 
